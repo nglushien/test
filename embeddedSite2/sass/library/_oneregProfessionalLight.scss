@@ -1,0 +1,239 @@
+/* Start Sponsored Content Area */
+#bprAbstractOneReg{
+
+  .site-container .micrositeSponsoredContentHeader{
+    display: none;
+  }
+
+  .main-content{
+    margin: 80px 20px 0;
+  }
+
+  #headerOuterContainer{
+    background: #ebebeb;
+    width:100%;
+  }
+
+  #headerInnerContainer{
+    margin:0 auto;
+    max-width: 1280px;
+  }
+
+  #headerContainerClear{
+    clear:both;
+  }
+
+  #sponsorBar{
+    float: right;
+    height: auto;
+    padding: 20px 20px 22px 0;
+    width: 30%;
+  }
+
+  #sponsorBarContainer{
+    float: right;
+    position: relative;
+
+    #socialMenu{
+      display: none;
+    }
+  }
+
+  i.icon-share2{
+    color:#c2c2c2;
+    font-size: 25px;
+
+    &.active{
+      color: $headerShareIconMobileActiveColor;
+    }
+  }
+
+  .micrositeSocialMenu{
+    background: #fff;
+    display: none;
+    padding:5px 5px;
+    position: absolute;
+    right: 36px;
+    top: -9px;
+    width: 208px;
+    z-index: 2;
+
+    &:after{
+      border-style: solid;
+      border-width: 5px 0 5px 7px;
+      border-color: transparent transparent transparent #ffffff;
+      content:' ';
+      display: inline-block;
+      position: absolute;
+      right:-7px;
+      top: 16px;
+    }
+  }
+
+  .share-bar{
+    .share-bar-item{
+      float: left;
+      margin:0 12px;
+
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        color:#c2c2c2;
+        display: block;
+        font-size: 30px;
+
+        &:hover{
+          color: $headerShareIconMobileHoverColor;
+        }
+      }
+    }
+  }
+
+  #sponsoredBy{
+    cursor: pointer;
+    float: left;
+    position: relative;
+    right:0px;
+    width: 30px;
+
+    .sponsoredByText{
+      display: none;
+    }
+
+    i.icon-info{
+      color:#c2c2c2;
+      font-size: 25px;
+      &.active{
+        color: $headerSponsoredInfoIconActiveColor;
+      }
+    }
+
+    .sponsorInfoPanel{
+      background: #fff;
+      border:1px solid #ebebeb;
+      display: none;
+      padding:10px;
+      position: absolute;
+      right:30px;
+      top: -9px;
+      width: 215px;
+      z-index: 9;
+
+      &:after{
+        border-style: solid;
+        border-width: 5px 0 5px 7px;
+        border-color: transparent transparent transparent #ffffff;
+        content:' ';
+        display: inline-block;
+        position: absolute;
+        right:-7px;
+        top: 16px;
+      }
+
+      p{
+        font-family: $fontArialRegular;
+        font-size: 11px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width:640px){
+  #bprAbstractOneReg{
+    #sponsorBar{
+      height: 75px;
+      min-height: inherit;
+      padding-top: 25px;
+    }
+  }
+}
+
+@media (min-width:960px){
+  #bprAbstractOneReg{
+    .main-content{
+      margin: 20px auto 0;
+      width: 880px;
+    }
+    #sponsorBar{
+      height: 66px;
+      padding: 25px 20px;
+      width: 23%;
+    }
+
+    .icon-share2{
+      display: none;
+    }
+
+    .micrositeSocialMenu{
+      background:none;
+      display: block;
+      height: auto;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+      right: inherit;
+      top:inherit;
+      width: 172px;
+
+      .share-bar-item{
+        background:#c2c2c2;
+        padding:2px;
+        height: 30px;
+        margin: 0 7px;
+        width: 30px;
+        a{
+          color:#fff;
+          font-size: 27px;
+        }
+      }
+    }
+
+    #sponsoredBy{
+      margin: 0;
+      width: auto;
+      .sponsoredByText{
+        color:#999;
+        display: block;
+        float: left;
+        font-family: $fontArialRegular;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      i.icon-info{
+        color: #999;
+        float: right;
+        font-size: 20px;
+        margin: -5px 0 0 4px;
+      }
+
+      .sponsorInfoPanel{
+        right:30px;
+        top:-5px;
+
+        &:after{
+          top: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:1280px){
+  #bprAbstractOneReg{
+    .main-content{
+      width: 1200px;
+    }
+    #sponsorBar{
+      padding-right: 50px;
+      width: 233px;
+    }
+  }
+}
+
+/* End Sponsored Content Area */

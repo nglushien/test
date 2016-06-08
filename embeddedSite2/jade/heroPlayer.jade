@@ -1,0 +1,27 @@
+#heroPlayerContainer
+  a#heroImage
+    #heroOverlay
+      p.overlayDuration
+      h2.overlayTitle
+      p.overlayCTA Watch Now
+    #heroImageContainerOuter
+      #heroImageContainerInner
+        img(src="images/background-light.jpg")
+  #videoPlayerContainer
+    //- Video ID = 4443437023001
+    //- playlist IDs
+    //-[4236238425001]; // 1 item
+    //-[4234547962001]; // 2 items
+    //-[4234547944001]; // 3 items
+    //-[4287609999001]; // 4 items
+    //-[4234547961001]; // 9 items
+    //-[4539093745001]; // Just MP4s
+    video#video-1.video-js(data-account="1660622130",data-video-id="",data-playlist-id="4234547961001", data-player="2483e45a-7074-4c6a-8470-0e4a53b3bef8", data-embed="default", controls="")
+  #heroPlaylistContainer
+    ol.vjs-playlist
+  #heroPlaylistInfoContainer
+    p
+      span#slider-prev
+      span.videoInfo
+      span#slider-next
+  script(src="//players.brightcove.net/1660622130/2483e45a-7074-4c6a-8470-0e4a53b3bef8_default/index.min.js")

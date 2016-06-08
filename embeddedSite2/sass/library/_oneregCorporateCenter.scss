@@ -1,0 +1,242 @@
+/* Start Sponsored Content Area */
+#bprAbstractOneReg{
+
+  .site-container .micrositeSponsoredContentHeader{
+    display: none;
+  }
+
+  .main-content{
+    margin: 80px 20px 0;
+  }
+
+  #headerOuterContainer{
+    background: $headerOuterContainerBackgroundColor url(../images/bkgPattern-medium.png)repeat 0 0;
+    width:100%;
+  }
+
+  #headerInnerContainer{
+    margin:0 auto;
+    max-width: 1280px;
+  }
+
+  #headerContainerClear{
+    clear:both;
+  }
+
+  #sponsorBar{
+    float: right;
+    height: auto;
+    padding: 25px 20px 25px 0;
+    width: 30%;
+  }
+
+  #sponsorBarContainer{
+    float: right;
+    position: relative;
+
+    #socialMenu{
+      display: none;
+    }
+  }
+
+  #sponsoredBy{
+    cursor: pointer;
+    float: left;
+    position: relative;
+    right:0px;
+    width: 30px;
+
+    .sponsoredByText{
+      display: none;
+    }
+
+    i.icon-info{
+      color:#fff;
+      font-size: 25px;
+      &.active{
+        color:$headerShareIconMobileActiveColor;
+      }
+    }
+
+    .sponsorInfoPanel{
+      background: #fff;
+      border:1px solid #ebebeb;
+      display: none;
+      padding:10px;
+      position: absolute;
+      right:30px;
+      top: -9px;
+      width: 215px;
+      z-index: 9;
+
+      &:after{
+        border-style: solid;
+        border-width: 5px 0 5px 7px;
+        border-color: transparent transparent transparent #ffffff;
+        content:' ';
+        display: inline-block;
+        position: absolute;
+        right:-7px;
+        top: 16px;
+      }
+
+      p{
+        font-family: 'latoregular';
+        font-size: 11px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width:640px){
+  #bprAbstractOneReg{
+    #headerOuterContainer{
+      background: $clientColor1 url(../images/bkgPattern-medium.png) repeat 0 0;
+    }
+    #sponsorBar{
+      background: $clientColor1 url(../images/bkgPattern-medium.png) repeat 0 0;
+      height: 100px;
+      padding:35px 20px 35px 0;
+    }
+
+    #sponsoredBy{
+      i.icon-info{
+        margin: 0;
+        padding:0;
+        &.active{
+          color:$headerShareIconMobileActiveColor;
+        }
+      }
+
+      .sponsorInfoPanel{
+        position: fixed;
+        right:82px;
+        top:116px;
+        &:after{
+          right:-7px;
+          top:6px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:960px){
+  #bprAbstractOneReg{
+    .main-content{
+      margin: 20px auto 0;
+      width: 880px;
+    }
+    #sponsorBar{
+      border:0;
+      height: 124px;
+      overflow: visible;
+      padding-bottom: 45px;
+      padding-top: 45px;
+    }
+
+    #sponsoredBy{
+      border-right: none;
+      padding:0 17px 0 0;
+      width: auto;
+      .sponsoredByText{
+        color:#fff;
+        display: block;
+        float: left;
+        font-family: arial;
+        font-size: 10px;
+        line-height: 40px;
+        text-transform: uppercase;
+      }
+      i.icon-info{
+        float: right;
+        font-size: 20px;
+        line-height: 37px;
+        margin: 0 0 0 10px;
+      }
+
+      .sponsorInfoPanel{
+        position: absolute;
+        right:48px;
+        top:4px;
+
+        &:after{
+          top: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:1280px){
+  #bprAbstractOneReg{
+    .main-content{
+      width: 1200px;
+    }
+    // #sponsorBar{
+    //   overflow: visible;
+    // }
+    #sponsorBarContainer{
+      float: none;
+      height: inherit;
+      margin: 0 auto;
+      width: auto;
+    }
+    #sponsoredBy{
+      float: right;
+      .sponsorInfoPanel{
+        position: absolute;
+        right:48px;
+      }
+    }
+  }
+}
+
+/* End Sponsored Content Area */
+
+@media(min-width:640px){
+  #bprAbstractOneReg{
+    #micrositeHeader{
+      background: $clientColor1 url(../images/bkgPattern-medium.png) repeat 0 0;
+      float: left;
+      min-height: inherit;
+      height:100px;
+      padding: 15px 20px;
+      width: 70%;
+
+      a.clientLogo{
+        height: 70px;
+      }
+    }
+    #headerContainerClear{
+      clear: none;
+    }
+  }
+}
+
+@media(min-width:960px){
+  #bprAbstractOneReg{
+    #micrositeHeader{
+      height: 124px;
+      padding: 16px 20px;
+
+      a.clientLogo{
+        height: 90px;
+      }
+    }
+  }
+}
+
+@media(min-width:1280px){
+  #bprAbstractOneReg{
+    #micrositeHeader{
+      padding: 15px 50px;
+      // a{
+      //   margin: 0 auto;
+      //   width:1180px;
+      // }
+    }
+  }
+}
+/* End Header Area */

@@ -1,0 +1,91 @@
+// Fonts
+$fontArialRegular: Arial, Helvetica Neue, Helvetica, sans-serif;
+$fontArialBlack: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+
+body{
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+// Light Asset demo:
+$clientColor1: #69be28;
+$clientHoverColor1: #0072c6;
+
+// Template Colors
+$templateTextColor1: #323232;
+$templateTextColor2: #666;
+$templateTextColor3: #4c4c4c;
+$templateHoverColor: #000;
+
+// Header
+$headerShareIconMobileHoverColor: $clientColor1;
+$headerShareIconMobileActiveColor: $clientColor1;
+$headerShareIconBackgroundHoverColor: $clientColor1;
+$headerSponsoredInfoIconActiveColor: $clientColor1;
+
+// Nav
+$navDropdownMobileBackgroundColor: $clientColor1;
+$navDropdownMobileFontColor: $clientColor1;
+
+// Wayfinder
+$wayfinderTitleFontColor: $templateTextColor1;
+$wayfinderDescriptionFontColor: $templateTextColor3;
+
+// Hero Asset
+$overlayTitleBkgColor: lighten(rgba($templateHoverColor,.8),10%);
+$overlayTitleFontColor: #fff;
+$overlayCTABkgColor: $clientColor1;
+$overlayCTAFontColor: #fff;
+$overlayIconColor: $clientColor1;
+$heroImageContainerOuterBackgroundColor: $clientColor1;
+$heroCTATextContainerBackgroundColor: $templateHoverColor;
+$heroCTAIconContainerBackgroundColor: $templateHoverColor;
+
+// Hero Video variables
+$overlayBkgColor: lighten(rgba($templateHoverColor,.8),5%);
+$overlayDurationFontColor: #fff;
+$overlayDurationBkgColor: darken(rgba(#323232,.8),20%);
+$overlayTitleFontColor: #fff;
+$overlayCTATextContainerHoverBackgroundColor: $clientHoverColor1;
+$overlayCTAIconContainerBackgroundColor: $templateHoverColor;
+$overlayCTAFontColor: #fff;
+$videoPlayerContainerBkgColor: $clientColor1;
+$playlistItemThumbnailBorder: 2px solid #e1e1e1;
+$selectedPlaylistItemThumbnailBorder: 2px solid $clientHoverColor1;
+$playlistItemTitleFontColor: #323232;
+$playlistItemDurationFontColor: #fff;
+$playlistIconActiveColor: $clientColor1;
+$spinnerBackgroundColor: $clientColor1;
+$heroImageOuterContainerBackgroundColor: $clientColor1;
+
+// Featured Asset
+$featuredAssetsTopHeadingColor: $templateTextColor1;
+$featuredItemTitleColor: $templateTextColor2;
+$featuredItemTitleHoverColor: $templateHoverColor;
+$featuredItemCTATextContainerBackgroundColor: $clientColor1;
+$featuredItemCTATextContainerBackgroundHoverColor: $clientHoverColor1;
+
+// Asset Listing
+$assetListingTopHeadingColor: $templateTextColor1;
+$assetsListingTitleColor: $templateTextColor2;
+$assetsListingTitleHoverColor: $templateHoverColor;
+$assetsListingDescriptionColor: $templateTextColor1;
+$assetsListingDescriptionHoverColor: #000;
+$assetsListingCTAColor: $clientColor1;
+$assetsListingCTAHoverColor: $clientHoverColor1;
+$assetListingExpandColor: $clientColor1;
+
+// Social Feed
+$unselectedTabBkgColor: #c2c2c2;
+$socialFeedLinkColor: $clientColor1;
+$socialFeedFooterBackgroundColor: $clientColor1;
+$socialFeedCTABackgroundColor: $clientColor1;
+$socialFeedCTAHoverBackgroundColor: $clientHoverColor1;
+
+@import "library/_headerProfessionalLight";
+@import "library/_navigationProfessionalLight";
+@import "library/_wayFinderProfessionalLight";
+@import "library/_heroPlayerProfessionalLight";
+@import "library/_heroAssetProfessionalLight";
+@import "library/_contentViewerProfessionalLight";
+@import "library/_socialFeedsProfessionalLight";
+@import "library/_oneregProfessionalLight";

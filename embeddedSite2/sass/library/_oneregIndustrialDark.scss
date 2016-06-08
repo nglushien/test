@@ -1,0 +1,233 @@
+/* Start Sponsored Content Area */
+#bprAbstractOneReg{
+
+  .site-container .micrositeSponsoredContentHeader{
+    display: none;
+  }
+
+  .main-content{
+    margin: 80px 20px 0;
+  }
+
+  #headerOuterContainer{
+    background: $headerOuterContainerBackgroundColor url(../images/bkgPattern.png)repeat 0 0;
+    // margin:0 20px;
+    width:inherit;
+  }
+
+  #headerInnerContainer{
+    margin:0 auto;
+    max-width: 1280px;
+  }
+
+  #headerContainerClear{
+    clear:both;
+  }
+
+  #sponsorBar{
+    float: right;
+    height: 75px;
+    padding: 20px 10px 22px 0;
+    width: 30%;
+  }
+
+  #sponsorBarContainer{
+    float: right;
+    position: relative;
+
+    #socialMenu{
+      display: none;
+    }
+  }
+
+  #sponsoredBy{
+    cursor: pointer;
+    float: left;
+    position: relative;
+    right:10px;
+    top:6px;
+    width: 30px;
+
+    .sponsoredByText{
+      display: none;
+    }
+
+    i.icon-info{
+      color:#fff;
+      font-size: 25px;
+      &.active{
+        color:#151515;
+      }
+    }
+
+    .sponsorInfoPanel{
+      background: #fff;
+      border:1px solid #ebebeb;
+      display: none;
+      font-family: 'open_sansregular';
+      font-size:12px;
+      padding:10px;
+      position: absolute;
+      right:30px;
+      top: -9px;
+      width: 215px;
+      z-index: 9;
+
+      &:after{
+        border-style: solid;
+        border-width: 5px 0 5px 7px;
+        border-color: transparent transparent transparent #ffffff;
+        content:' ';
+        display: inline-block;
+        position: absolute;
+        right:-7px;
+        top: 16px;
+      }
+
+      p{
+        font-size: 11px;
+        line-height: 15px;
+      }
+    }
+  }
+  // .main-content{
+  //   margin-top: 0;
+  //   #micrositeContainer .micrositeOneReg-section{
+  //     margin-top: 0;
+  //   }
+  // }
+}
+
+@media (min-width:640px){
+  #bprAbstractOneReg{
+    #sponsoredBy{
+      top:0;
+    }
+  }
+}
+
+@media (min-width:960px){
+  #bprAbstractOneReg{
+    .main-content{
+      margin: 20px auto 0;
+      width: 880px;
+    }
+    #sponsorBar{
+      padding:26px 20px;
+      position: relative;
+      top:0;
+      width: 233px;
+    }
+
+    #sponsoredBy{
+      border:0;
+      margin: 0;
+      padding-right: 0;
+      right:0;
+      width: auto;
+      .sponsoredByText{
+        color:#fff;
+        display: block;
+        float: left;
+        font-family: arial;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      i.icon-info{
+        float: right;
+        font-size: 20px;
+        margin: -2px 0 0 4px;
+      }
+      .sponsorInfoPanel{
+        right:30px;
+        top:-5px;
+
+        &:after{
+          top: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:1280px){
+  #bprAbstractOneReg{
+    .main-content{
+      width: 1200px;
+    }
+    #sponsorBar{
+      overflow: visible;
+    }
+    #sponsorBarContainer{
+      float: none;
+      height: auto;
+      margin: 0 auto;
+      width: 1180px;
+    }
+    #sponsoredBy{
+      .sponsorInfoPanel{
+        position: absolute;
+        right:31px;
+      }
+    }
+  }
+}
+/* End Sponsored Content Area */
+
+/* Start Header Area */
+#bprAbstractOneReg{
+  #micrositeHeader{
+    float: left;
+    height: auto;
+    padding: 20px 20px 20px 10px;
+    width: 70%;
+    a.clientLogo{
+      background:url('../images/clientLogo.png')no-repeat 0 0;
+      background-size: contain;
+      display: inline-block;
+      height: 43px;
+      width: 152px;
+    }
+  }
+}
+
+@media(min-width:640px){
+  #bprAbstractOneReg{
+    #micrositeHeader{
+      height: 75px;
+      min-height: inherit;
+      padding: 10px 20px;
+
+      a.clientLogo{
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@media(min-width:960px){
+  #bprAbstractOneReg{
+    #micrositeHeader{
+      height: 75px;
+      padding: 10px 20px;
+      width: 70%;
+
+      a.clientLogo{
+        height: 46px;
+        margin-top:0;
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media(min-width:1280px){
+  #bprAbstractOneReg{
+    #micrositeHeader{
+      padding: 10px 0 10px 50px;
+    }
+  }
+}
+
+/* End Header Area */

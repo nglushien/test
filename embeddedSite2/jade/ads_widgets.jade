@@ -1,0 +1,46 @@
+#widgetsOuterContainer
+  script.
+    // Not editable
+    var socialFeed = true;
+
+    // Editable: 2 options only (true or false)
+    var socialFeedHasTwitter = true;
+    var socialFeedHasFacebook = true;
+    var socialFeedHasRSS = true;
+
+    // Editable: Update to Twitter handle (e.g. 'TechTarget')
+    var socialFeedTwitterAccount = 'trilliumbrewing';
+
+    // Editable: Only update if you want footer text to differ from the handle
+    // (e.g. var socialFeedTwitterAccountName = 'Tech Target CW';)
+    var socialFeedTwitterAccountName = socialFeedTwitterAccount;
+
+    // Editable: Find Facebook account number/name. Some pages will have a number associated with it.
+    var socialFeedFacebookAccount = '231963570219936';
+
+    // Editable: Only update if you want footer text to differ from the handle
+    // (e.g. var socialFeedFacebookAccountName = 'TechTarget';)
+    // The footer will say Like us at TechTarget instead of Like us at 231963570219936
+    var socialFeedFacebookAccountName = socialFeedFacebookAccount;
+
+    // Editable: Provide 2 URLs. The account URL is the link to the XML feed itself. The Link URL is a webpage where the footer CTA will link to.
+    var socialFeedRSSAccount = 'http://www.bitpipe.com/data/bpXchange?b=ka_bp_datamining&d=31&f=rss&u=rss';
+    var socialFeedRSSLinkURL = 'http://www.bitpipe.com/';
+
+    // Editable: 3 options ('Twitter', 'Facebook', 'RSS')
+    // Whatever is selected will be the default tab
+    var startActive = 'Twitter';
+
+  #widgetsInnerContainer
+    #micrositeSocialFeeds.clearfix
+      .micrositeSocialFeedNav
+        ul 
+      .micrositeSocialFeedContent
+        .spinningBoxes
+          .cube1
+          .cube2
+        ul
+      .micrositeSocialFeedFooter
+        .micrositeSocialFeedFooterCTA
+    #adContainer
+      img(src="images/adLight.jpg")

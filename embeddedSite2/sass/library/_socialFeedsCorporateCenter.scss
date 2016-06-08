@@ -1,0 +1,672 @@
+#widgetsOuterContainer{
+  background:#cccccc;
+  height:auto;
+  overflow: hidden;
+  padding:30px 10px;
+  width: 100%;
+  #widgetsInnerContainer{
+    margin:0 auto;
+    max-width: 300px;
+  }
+}
+
+#micrositeWrapper {
+  #micrositeSocialFeeds {
+    font-size: 14px;
+    margin-bottom: 30px;
+
+    a {
+      text-decoration: none;
+    }
+    ul {
+      list-style: none;
+    }
+
+    .socialFeedMissingErrorMessage {
+      text-align: center;
+      font-size: 12px;
+      line-height: 2em;
+      padding: 20px;
+
+      h2 {
+        font-size: 16px;
+      }
+    }
+
+    &.count1 {
+      .micrositeSocialFeedNav {
+        ul {
+          li {
+            width: 150px;
+            &.active {
+              width: 149px;
+              span {
+                display: inline-block;
+                position: relative;
+                top: -3px;
+              }
+            }
+            &.micrositeSocialFeedNavTwitterTab {
+              background: #00aced;
+            }
+            &.micrositeSocialFeedNavFacebookTab {
+              background: #3b5998;
+            }
+            &.micrositeSocialFeedNavRSSTab {
+              background: #faaf40;
+            }
+          }
+        }
+      }
+    }
+    &.count2 {
+      .micrositeSocialFeedNav {
+        ul {
+          li {
+            width: 149px;
+            span {
+              top: -2px;
+              position: relative;
+              display: inline-block;
+            }
+            &.active {
+              width: 149px;
+              span {
+                display: inline-block;
+                position: relative;
+                top: -2px;
+              }
+              &.micrositeSocialFeedNavTwitterTab {
+              background: #00aced;
+            }
+            &.micrositeSocialFeedNavFacebookTab {
+              background: #3b5998;
+            }
+            &.micrositeSocialFeedNavRSSTab {
+              background: #faaf40;
+            }
+            }
+          }
+        }
+      }
+    }
+    &.count3 {
+      .micrositeSocialFeedNav {
+        ul {
+          li {
+            width: 73px;
+            margin-right: 1px;
+            span {
+              display: none;
+            }
+            &.active {
+              width: 149px;
+              span {
+                display: inline-block;
+                position: relative;
+                top: -3px;
+              }
+              &.micrositeSocialFeedNavTwitterTab {
+              background: #00aced;
+            }
+            &.micrositeSocialFeedNavFacebookTab {
+              background: #3b5998;
+            }
+            &.micrositeSocialFeedNavRSSTab {
+              background: #faaf40;
+            }
+            }
+            &:last-of-type {
+              margin-right: 0;
+              width: 74px;
+              &.active {
+                width: 149px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .micrositeSocialFeedNav {
+      // border-bottom: 1px solid $selectedTabBkgColor;
+      width: 298px;
+      font-size: 12px;
+      font-family: latoregular;
+      font-weight: 700;
+      float: left;
+      clear: left;
+
+      p {
+        color: #fff;
+      }
+
+      ul {
+        li {
+          height: 30px;
+          line-height: 30px;
+          float: left;
+          text-align:center;
+          cursor: pointer;
+          color: #fff;
+          background-color: $unselectedTabBkgColor;
+          text-transform: uppercase;
+
+          i {
+            margin-right: 10px;
+            font-size: 20px;
+
+            &.icon-facebook {
+              line-height: 27px;
+            }
+
+            &.icon-twitter {
+              line-height: 30px;
+            }
+
+            &.icon-rss {
+              line-height: 30px;
+            }
+          }
+
+          &.active {
+            height: 35px;
+            line-height: 35px;
+            margin-top: -5px;
+            font-weight: 700;
+            background-color: $selectedTabBkgColor;
+
+            i {
+              &.icon-facebook {
+                line-height: 32px;
+              }
+
+              &.icon-rss {
+                line-height: 35px;
+              }
+
+              &.icon-twitter {
+                line-height: 35px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .micrositeSocialFeedContent {
+      font-family: latoregular;
+      font-size: 14px;
+      line-height: 17px;
+      position: relative;
+      background: #fff;
+      width: 298px;
+      height: auto;
+      float: left;
+      clear: left;
+
+      .micrositeSocialFeedRSSPanel {
+        .rssHeader {
+          display: none;
+        }
+        a {
+          color: #faaf40;
+        }
+        #rssFeed {
+          padding: 0 10px;
+          line-height: 17px;
+          font-size: 14px;
+          color: #000;
+        }
+        .odd, .even {
+          background: none;
+        }
+        .rssBody {
+          a {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .rssRow {
+          border-bottom: 1px solid #c2c2c2;
+          padding: 17px 0;
+
+          h4 {
+            font-weight: normal;
+            a {
+              color: #666;
+            }
+          }
+
+          div {
+            font-size: 100%;
+            margin-bottom: 15px;
+            color: #acacac;
+          }
+
+          a.rssFeedCTA {
+            font-weight: normal;
+            color: $socialFeedLinkColor;
+          }
+
+          &:nth-of-type(1n + 3) {
+            display: none;
+          }
+          &:nth-of-type(1n + 2) {
+            border-bottom: none;
+          }
+        }
+      }
+      .micrositeSocialFeedTwitterPanel {
+        #twitterfeed {
+
+          padding: 0 10px;
+          line-height: 17px;
+          display: none;
+
+          .tweets {
+            li {
+              width: 100%;
+              border-bottom: 1px solid #c2c2c2;
+              padding: 16px 0 7px;
+              font-size: 14px;
+
+              a {
+                color: #666;
+              }
+              &:first-of-type {
+                padding-top: 16px;
+              }
+              &:nth-of-type(1n + 3) {
+                display: none;
+              }
+              &:nth-of-type(1n + 2) {
+                border-bottom: none;
+              }
+
+              a.inLineLink, a.hashLink, a.handleLink {
+                color: $socialFeedLinkColor;
+                font-weight: normal;
+              }
+              .twitterAvatarContainer {
+                display: none;
+              }
+              .twitterUserName {
+                color: #455565;
+              }
+              .twitterUserHandle1 {
+                display: none;
+              }
+              .twitterUserHandle1, .twitterUserHandle2 {
+                color: #acacac;
+              }
+              .tweetDate {
+                color: #acacac !important;
+                float: right;
+                padding: 0 0 10px 10px;
+              }
+              p {
+                margin-bottom: 15px;
+                color: #7d7d7d !important;
+              }
+              .tweetIntents {
+                font-family: latoregular;
+                color: #acacac !important;
+
+                a {
+                  margin: 0 5px 0 25px;
+                  color: #acacac !important;
+                }
+                a:first-of-type {
+                  margin-left: 0;
+                }
+                span {
+                  position: relative;
+                  top: -4px;
+                }
+                .replyIntentLink, .retweetIntentLink, .favoriteIntentLink {
+                  span {
+                    display: none;
+                  }
+                }
+                .micrositeSocialFeedTwitterFavorited, .micrositeSocialFeedTwitterRetweeted {
+                  margin-left: 5px;
+                }
+                .icon-reply, .icon-retweet, .icon-favorite {
+                  font-size: 22px;
+                  line-height: 38px;
+                }
+              }
+              .tweetContent {
+                a {
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+      }
+      .micrositeSocialFeedFacebookPanel {
+        #facebookfeed {
+
+          padding: 0 10px;
+          line-height: 17px;
+          display: none;
+
+          a {
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          .facebookstatusupdates {
+            color: #666;
+            width: 100%;
+            font-size: 14px;
+
+            a {
+              color: #7d7d7d;
+            }
+
+            li {
+              border-bottom: 1px solid #c2c2c2;
+              padding: 17px 0;
+              color: #7d7d7d;
+
+              &:nth-of-type(1n + 3) {
+                display: none;
+              }
+              &:nth-of-type(1n + 2) {
+                border-bottom: none;
+              }
+            }
+
+            p {
+              margin-bottom: 15px;
+            }
+
+            .facebookstatus {
+              color: #000;
+            }
+            .facebookUser {
+              color: #455565;
+            }
+            .facebookStatusDate {
+              float: right;
+              color: #acacac;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+            .facebookCTA {
+              font-weight: normal;
+              margin-bottom: 0;
+
+              a {
+                color: $socialFeedLinkColor;
+              }
+            }
+          }
+
+        }
+      }
+    }
+
+    .micrositeSocialFeedFooter {
+      float: left;
+      clear: left;
+      background-color: #fff;
+      padding: 30px 0;
+      width: 298px;
+      text-align: center;
+
+      .micrositeSocialFeedFooterCTA {
+        font-family: latoblack;
+        background-color: $socialFeedFooterBackgroundColor;
+        padding: 10px 35px;
+        margin: 0 auto;
+        display: inline-block;
+      }
+      a {
+        font-size: 14px;
+        color: #fff;
+      }
+      a:hover {
+        .micrositeSocialFeedFooterCTA {
+          background-color: $socialFeedCTAHoverBackgroundColor;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:640px){
+  #widgetsOuterContainer{
+    #widgetsInnerContainer{
+      max-width: 610px;
+    }
+  }
+  #micrositeWrapper{
+    #micrositeSocialFeeds{
+      float: left;
+      width: auto;
+      margin-bottom: 0;
+    }
+    #adContainer{
+      float: right;
+      margin:0;
+      position: relative;
+      top: 30px;
+    }
+  }
+}
+
+@media (min-width:960px){
+  #widgetsOuterContainer{
+    #widgetsInnerContainer{
+      max-width: 940px;
+    }
+  }
+  #micrositeWrapper {
+    #micrositeSocialFeeds {
+      &.count1 {
+        .micrositeSocialFeedNav {
+          ul {
+            li, li.active {
+              width: 254px;
+            }
+          }
+        }
+      }
+      &.count2 {
+        .micrositeSocialFeedNav {
+          ul {
+            li, li.active {
+              width: 310px;
+            }
+          }
+        }
+      }
+      &.count3 {
+        .micrositeSocialFeedNav {
+          ul {
+            li {
+              width: 155px;
+            }
+            li.active {
+              width: 309px;
+            }
+            li:last-of-type {
+              width: 154px;
+              &.active {
+                width: 308px !important;
+              }
+            }
+          }
+        }
+      }
+      .micrositeSocialFeedNav {
+        width: 620px;
+      }
+
+      .micrositeSocialFeedContent {
+        width: 620px;
+        height: 200px;
+        overflow-y: scroll;
+
+        .micrositeSocialFeedRSSPanel {
+          .rssRow {
+            &:nth-of-type(1n + 3) {
+              display: block;
+            }
+            &:nth-of-type(1n + 2) {
+              border-bottom: 1px solid #c2c2c2;
+            }
+            &:last-of-type {
+              border-bottom: none;
+            }
+          }
+        }
+
+        .micrositeSocialFeedFacebookPanel {
+          #facebookfeed {
+            .facebookstatusupdates {
+              li {
+                &:nth-of-type(1n + 3) {
+                  display: block;
+                }
+                &:nth-of-type(1n + 2) {
+                  border-bottom: 1px solid #c2c2c2;
+                }
+                &:last-of-type {
+                  border-bottom: none;
+                }
+              }
+            }
+          }
+        }
+
+        .micrositeSocialFeedTwitterPanel {
+          #twitterfeed {
+            .tweets {
+              li {
+                &:nth-of-type(1n + 3) {
+                  display: block;
+                }
+                &:nth-of-type(1n + 2) {
+                  border-bottom: 1px solid #c2c2c2;
+                }
+                &:last-of-type {
+                  border-bottom: none;
+                }
+                .twitterUserHandle1 {
+                  display: inline-block;
+                }
+                .twitterUserHandle2 {
+                  display: none;
+                }
+                .tweetIntents {
+                  .replyIntentLink, .retweetIntentLink, .favoriteIntentLink {
+                    span {
+                      display: inline-block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+      .micrositeSocialFeedFooter {
+        width: 620px;
+        padding: 20px 0;
+
+        .micrositeSocialFeedFooterCTA {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:1280px){
+  #widgetsOuterContainer{
+    #widgetsInnerContainer{
+      max-width: 1180px;
+    }
+  }
+  #micrositeWrapper {
+    #micrositeSocialFeeds {
+      &.count1 {
+        .micrositeSocialFeedNav {
+          ul {
+            li, li.active {
+              width: 254px;
+            }
+          }
+        }
+      }
+      &.count2 {
+        .micrositeSocialFeedNav {
+          ul {
+            li, li.active {
+              width: 390px;
+            }
+          }
+        }
+      }
+      &.count3 {
+        .micrositeSocialFeedNav {
+          ul {
+            li {
+              width: 195px;
+            }
+            li.active {
+              width: 389px;
+            }
+            li:last-of-type {
+              width: 194px;
+              &.active {
+                width: 388px !important;
+              }
+            }
+          }
+        }
+      }
+
+      .micrositeSocialFeedNav {
+        width: 780px;
+      }
+
+      .micrositeSocialFeedContent {
+        width: 780px;
+
+        .micrositeSocialFeedTwitterPanel {
+          #twitterfeed {
+            div.tweet {
+              float: none;
+              width: 100%;
+              padding-right: 0;
+              border-right: none;
+            }
+            div.tweetIntents {
+              float: none;
+              width: 100%;
+              padding-left: 0;
+            }
+          }
+        }
+
+      }
+      .micrositeSocialFeedFooter {
+        width: 780px;
+      }
+    }
+  }
+}

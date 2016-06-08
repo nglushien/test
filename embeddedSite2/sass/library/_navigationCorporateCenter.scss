@@ -1,0 +1,198 @@
+#micrositeWrapper nav {
+  background: $navOuterContainerBackgroundColor url(../images/bkgPattern-medium.png)repeat 0 0;
+  border-bottom: 1px solid $navOuterContainerBottomBorderColor;
+  padding-bottom: 10px;
+  position: relative;
+  width: 100%;
+  z-index: 4;
+}
+
+#tabDropDown {
+  background: rgba(0,0,0, .4);
+  cursor: pointer;
+  display: block;
+  min-height: 40px;
+  margin: 0 auto;
+  padding: 12px 30px;
+  position: relative;
+  width:280px;
+  a{
+    color:#fff;
+    display: block;
+    font-family: 'latoheavy';
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &:after{
+    border-style: solid;
+    border-width: 0 6px 10px 6px;
+    border-color: transparent transparent $navBottomIndicatorArrorColor transparent;
+    bottom:0;
+    content:' ';
+    display: block;
+    height: 0;
+    left:50%;
+    margin-left: -6px;
+    position: absolute;
+    width: 0;
+  }
+
+  i {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: -8px;
+    position: absolute;
+    right:15px;
+    top:50%;
+    -webkit-transform: rotate(90deg); /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
+    -ms-transform: rotate(90deg); /* IE 9 */
+    transform: rotate(90deg);
+  }
+}
+
+ul#navList {
+  background:#ebebeb;
+  border-top: 1px solid #b7b7b7;
+  display: none;
+  left:50%;
+  list-style: none;
+  margin: 0 0 0 -140px;
+  padding: 0;
+  position: absolute;
+  width: 280px;
+
+  li {
+    border-bottom: 1px solid #b7b7b7;
+    cursor: pointer;
+    &.activeTab {
+      display: none;
+    }
+
+    &:hover{
+      background: $navDropdownMobileBackgroundColor;
+      a{
+        color:#fff;
+      }
+    }
+    a {
+      color: $navDropdownMobileFontColor;
+      display: block;
+      font-family: 'latoheavy';
+      font-size: 14px;
+      padding: 10px 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  #micrositeWrapper nav {
+    background: none;
+    border-bottom: 0;
+    height: auto;
+    left: inherit;
+    margin:0 auto;
+    position: absolute;
+    right:15px;
+    top: 70px;
+    width: 280px;
+  }
+  #tabDropDown {
+    margin:0;
+  }
+  ul#navList {
+    left:inherit;
+    margin: 0;
+    padding:0;
+  }
+}
+
+@media (min-width: 960px) {
+  #micrositeWrapper nav{
+    height: 75px;
+    padding:0;
+    right: 20px;
+    top:54px;
+    width: 600px;
+    #tabDropDown{
+      display: none;
+    }
+    ul#navList{
+      background:none;
+      border:0;
+      display: block;
+      width: auto;
+      li{
+        border-bottom: 0;
+        border-left: 1px solid #fff;
+        display: table;
+        float: left;
+        position: relative;
+        text-align: center;
+        width: 150px;
+        &:last-child{
+          border-right: 1px solid #fff;
+        }
+        // &:before{
+        //   content:'';
+        //   display: inline-block;
+        //   height: 100%;
+        //   vertical-align: middle;
+        // }
+        &.activeTab{
+          background: rgba($navDesktopTabBackgroundColor, .8);
+          // display: block;
+          &:after{
+            border-style: solid;
+            border-width: 0 12px 10px 12px;
+            border-color: transparent transparent $clientColor1 transparent;
+            bottom:0;
+            content: ' ';
+            display: block;
+            height: 0;
+            left:50%;
+            margin-left: -12px;
+            position: absolute;
+            width: 0;
+          }
+          &:hover{
+            background: rgba($navDesktopTabBackgroundColor, .8);
+          }
+        }
+        &:hover{
+          background: rgba($navDesktopTabBackgroundColor,.8);
+        }
+        a{
+          color:#fff;
+          display: table-cell;
+          font-size: 13px;
+          height:75px;
+          padding: 0 10px;
+          vertical-align: middle;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  #micrositeWrapper nav {
+    height: auto;
+    left:inherit;
+    margin:0 auto;
+    position: relative;
+    right:0;
+    top:-86px;
+    width: 1180px;
+    ul#navList {
+      right:0;
+      li{
+        width: 200px;
+      }
+    }
+  }
+}

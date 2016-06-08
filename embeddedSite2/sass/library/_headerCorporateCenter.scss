@@ -1,0 +1,341 @@
+/* Classes added via JS */
+.show{
+  display: block !important;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+/* Start Sponsored Content Area */
+
+#headerOuterContainer{
+  background: $headerOuterContainerBackgroundColor url(../images/bkgPattern-medium.png)repeat 0 0;
+  height: auto;
+  width:100%;
+}
+
+#headerInnerContainer{
+  margin:0 auto;
+  // max-width: 1280px;
+}
+
+#headerContainerClear{
+  clear:both;
+}
+
+#sponsorBar{
+  float: right;
+  height: auto;
+  padding: 25px 10px 25px 0;
+  width: 32%;
+}
+
+#sponsorBarContainer{
+  float: right;
+  position: relative;
+
+  #socialMenu{
+    cursor: pointer;
+    float: right;
+  }
+}
+
+i.icon-share{
+  color:#fff;
+  font-size: 25px;
+  padding:10px;
+  &.active{
+    color:rgba(0,0,0,.4);
+  }
+}
+
+.micrositeSocialMenu{
+  background: #fff;
+  display: none;
+  padding:5px 5px;
+  position: absolute;
+  right: 46px;
+  top: -9px;
+  width: 208px;
+  z-index: 2;
+
+  &:after{
+    border-style: solid;
+    border-width: 5px 0 5px 7px;
+    border-color: transparent transparent transparent #ffffff;
+    content:' ';
+    display: inline-block;
+    position: absolute;
+    right:-7px;
+    top: 16px;
+  }
+}
+
+.share-bar{
+  .share-bar-item{
+    float: left;
+    margin:0 12px;
+
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    a{
+      color:#c2c2c2;
+      display: block;
+      font-size: 30px;
+
+      &:hover{
+        color: $headerShareIconHoverColor;
+      }
+    }
+  }
+}
+
+#sponsoredBy{
+  cursor: pointer;
+  float: left;
+  position: relative;
+  right:0px;
+  width: 45px;
+
+  .sponsoredByText{
+    display: none;
+  }
+
+  i.icon-iCircle{
+    color:#fff;
+    font-size: 25px;
+    padding:10px;
+    &.active{
+      color:rgba(0,0,0,.4);
+    }
+  }
+
+  .sponsorInfoPanel{
+    background: #fff;
+    border:1px solid #ebebeb;
+    display: none;
+    padding:10px;
+    position: absolute;
+    right:44px;
+    top: -9px;
+    width: 215px;
+    z-index: 9;
+
+    &:after{
+      border-style: solid;
+      border-width: 5px 0 5px 7px;
+      border-color: transparent transparent transparent #ffffff;
+      content:' ';
+      display: inline-block;
+      position: absolute;
+      right:-7px;
+      top: 16px;
+    }
+
+    p{
+      font-family: 'latoregular';
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+}
+
+@media (min-width:640px){
+  // #headerOuterContainer{
+  //   background: none;
+  // }
+  #sponsorBar{
+    background: $headerSponsorBarBackgroundColor;
+    float: none;
+    height: auto;
+    overflow: hidden;
+    padding:7px 20px;
+    width:100%;
+  }
+  #sponsorBarContainer{
+    #socialMenu{
+      margin-left: 20px;
+    }
+  }
+
+  i.icon-share.active{
+    color: $headerShareIconMobileActiveColor;
+  }
+
+  #sponsoredBy{
+    i.icon-iCircle{
+      margin-left: 25px;
+      &.active{
+        color: $headerSponsoredInfoIconActiveColor;
+      }
+    }
+    .sponsorInfoPanel{
+      position: fixed;
+      right:106px;
+      top:67px;
+      &:after{
+        right:-7px;
+        top:6px;
+      }
+    }
+  }
+}
+
+@media (min-width:960px){
+  #sponsorBar{
+    border-bottom: 1px solid #fff;
+    padding:0 20px;
+  }
+
+  .icon-share{
+    display: none;
+  }
+
+  #sponsorBar #socialMenu{
+    margin-top: 6px;
+  }
+
+  .micrositeSocialMenu{
+    background:none;
+    display: block;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    right: inherit;
+    top:inherit;
+    width: 172px;
+
+    .share-bar-item{
+      margin: 0 7px;
+      a{
+        color:#fff;
+        font-size: 25px;
+      }
+    }
+  }
+
+  #sponsoredBy{
+    border-right: 1px solid #fff;
+    padding:0 17px 0 0;
+    width: auto;
+    .sponsoredByText{
+      color:#fff;
+      display: block;
+      float: left;
+      font-family: arial;
+      font-size: 10px;
+      line-height: 40px;
+      text-transform: uppercase;
+    }
+    i.icon-iCircle{
+      float: right;
+      font-size: 20px;
+      line-height: 37px;
+      margin: 0 0 0 10px;
+      padding:0;
+    }
+
+    .sponsorInfoPanel{
+      right:262px;
+      top:105px;
+
+      &:after{
+        top: 8px;
+      }
+    }
+  }
+}
+
+@media (min-width:1280px){
+  #headerOuterContainer{
+    overflow: hidden;
+  }
+  #sponsorBar{
+    height: 40px;
+    padding:0 50px;
+    overflow: visible;
+  }
+  #sponsorBarContainer{
+    float: none;
+    height: auto;
+    margin: 0 auto;
+    width: 1180px;
+  }
+  #sponsoredBy{
+    float: right;
+    .sponsorInfoPanel{
+      position: absolute;
+      right:48px;
+      top:6px;
+    }
+  }
+}
+
+/* End Sponsored Content Area */
+
+/* Start Header Area */
+
+#micrositeHeader{
+  float: left;
+  height: auto;
+  padding: 13px 20px;
+  width: 68%;
+  a.clientLogo{
+    background:url('../images/clientLogo.png')no-repeat 0 0;
+    // background-size: contain;
+    background-size: 50px 50px;
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media(min-width:640px){
+  #micrositeHeader{
+    background: $headerOuterContainerBackgroundColor url(../images/bkgPattern-medium.png)repeat 0 0;
+    float: left;
+    min-height: inherit;
+    height:100px;
+    padding: 15px 20px;
+    width: 100%;
+
+    a.clientLogo{
+      background-size: 70px 70px;
+      height: 70px;
+      width:70px;
+    }
+  }
+  #headerContainerClear{
+    clear: none;
+  }
+}
+
+@media(min-width:960px){
+  #micrositeHeader{
+    height: 100px;
+    padding: 12px 20px;
+
+    a.clientLogo{
+      background-size: 76px 76px;
+      height: 76px;
+      width: 76px;
+    }
+  }
+}
+
+@media(min-width:1280px){
+  #micrositeHeader{
+    padding: 12px 50px;
+    a.clientLogo{
+      margin: 0 auto;
+      width:1180px;
+    }
+  }
+}
+/* End Header Area */

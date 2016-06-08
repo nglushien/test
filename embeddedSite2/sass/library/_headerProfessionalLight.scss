@@ -1,0 +1,282 @@
+/* Classes added via JS */
+.show{
+  display: block !important;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+/* Start Sponsored Content Area */
+
+#headerOuterContainer{
+  background: #ebebeb;
+  width:100%;
+}
+
+#headerInnerContainer{
+  margin:0 auto;
+  max-width: 1280px;
+}
+
+#headerContainerClear{
+  clear:both;
+}
+
+#sponsorBar{
+  float: right;
+  height: auto;
+  padding: 20px 10px 22px 0;
+  width: 30%;
+}
+
+#sponsorBarContainer{
+  float: right;
+  position: relative;
+
+  #socialMenu{
+    float: right;
+    margin-left: 10px;
+  }
+}
+
+i.icon-share{
+  color:#999;
+  font-size: 25px;
+  padding:10px;
+
+  &.active{
+    color: $headerShareIconMobileActiveColor;
+  }
+}
+
+.micrositeSocialMenu{
+  background: #fff;
+  display: none;
+  padding:5px 5px;
+  position: absolute;
+  right: 45px;
+  top: -9px;
+  width: 208px;
+  z-index: 2;
+
+  &:after{
+    border-style: solid;
+    border-width: 5px 0 5px 7px;
+    border-color: transparent transparent transparent #ffffff;
+    content:' ';
+    display: inline-block;
+    position: absolute;
+    right:-7px;
+    top: 16px;
+  }
+}
+
+.share-bar{
+  .share-bar-item{
+    float: left;
+    margin:0 12px;
+
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    a{
+      color:#c2c2c2;
+      display: block;
+      font-size: 30px;
+
+      &:hover{
+        color: $headerShareIconMobileHoverColor;
+      }
+    }
+  }
+}
+
+#sponsoredBy{
+  cursor: pointer;
+  float: left;
+  position: relative;
+  right:0px;
+  width: 30px;
+
+  .sponsoredByText{
+    display: none;
+  }
+
+  i.icon-iCircle{
+    color:#999;
+    font-size: 25px;
+    padding:10px;
+    &.active{
+      color: $headerSponsoredInfoIconActiveColor;
+    }
+  }
+
+  .sponsorInfoPanel{
+    background: #fff;
+    border:1px solid #ebebeb;
+    display: none;
+    padding:10px;
+    position: absolute;
+    right:30px;
+    top: -9px;
+    width: 215px;
+    z-index: 9;
+
+    &:after{
+      border-style: solid;
+      border-width: 5px 0 5px 7px;
+      border-color: transparent transparent transparent #ffffff;
+      content:' ';
+      display: inline-block;
+      position: absolute;
+      right:-7px;
+      top: 16px;
+    }
+
+    p{
+      font-family: $fontArialRegular;
+      font-size: 11px;
+      line-height: 15px;
+    }
+  }
+}
+
+@media (min-width:640px){
+  #sponsorBar{
+    height: 75px;
+    min-height: inherit;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width:960px){
+  #sponsorBar{
+    height: auto;
+    padding: 15px 20px;
+    width: 445px;
+
+    #socialMenu{
+      margin: 0;
+    }
+  }
+
+  .icon-share{
+    display: none;
+  }
+
+  .micrositeSocialMenu{
+    background:none;
+    display: block;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    right: inherit;
+    top:inherit;
+    width: 172px;
+
+    .share-bar-item{
+      background:#999;
+      padding:2px;
+      height: 30px;
+      margin: 0 7px;
+      width: 30px;
+      a{
+        color:#fff;
+        font-size: 27px;
+      }
+      &:hover{
+        background:$headerShareIconBackgroundHoverColor;
+        a{
+          color:#fff;
+        }
+      }
+    }
+  }
+
+  #sponsoredBy{
+    margin: 10px 35px 0 0;
+    width: auto;
+    .sponsoredByText{
+      color:#999;
+      display: block;
+      float: left;
+      font-family: $fontArialRegular;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    i.icon-iCircle{
+      float: right;
+      font-size: 20px;
+      margin: -2px 0 0 4px;
+      padding:0;
+    }
+
+    .sponsorInfoPanel{
+      right:30px;
+      top:-5px;
+
+      &:after{
+        top: 8px;
+      }
+    }
+  }
+}
+
+@media (min-width:1280px){
+  #sponsorBar{
+    padding-right: 50px;
+  }
+}
+
+/* End Sponsored Content Area */
+
+/* Start Header Area */
+
+#micrositeHeader{
+  float: left;
+  height: 75px;
+  padding: 0 20px;
+  width: 65%;
+  a.clientLogo{
+    background:url('../images/clientLogo.png')no-repeat 0 0;
+    background-size: contain;
+    display: inline-block;
+    height: 36px;
+    vertical-align: middle;
+    width: 147px;
+  }
+
+  &:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  }
+}
+
+@media(min-width:960px){
+  #micrositeHeader{
+    height:auto;
+    padding: 10px 20px 10px;
+    width: 53%;
+    a.clientLogo{
+      height:46px;
+      width: 195px;
+    }
+  }
+}
+
+@media(min-width:1280px){
+  #micrositeHeader{
+    padding: 10px 0 10px 50px;
+    width: 65%;
+  }
+}
+/* End Header Area */

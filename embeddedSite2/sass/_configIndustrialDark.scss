@@ -1,0 +1,73 @@
+// Client branding colors
+$clientColor1: #00457c;
+$clientHoverColor1: #151515;
+
+$fontArialRegular: Arial, Helvetica Neue, Helvetica, sans-serif;
+$fontArialBlack: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+
+// Header
+$headerOuterContainerBackgroundColor: $clientColor1;
+$headerShareIconColor: $clientColor1;
+$headerShareIconHoverColor: $clientColor1;
+
+// Nav
+$navOuterContainerBackgroundColor: $clientColor1;
+$navDropdownMobileFontColor: $clientColor1;
+$navDesktopTabBorderColor: $clientColor1;
+$navFontColor: $clientColor1;
+
+// Hero Asset
+$overlayTitleFontColor: $clientColor1;
+$overlayCTABkgColor: #000;
+$overlayCTABkgHoverColor: $clientColor1;
+$overlayCTAFontColor: #fff;
+
+$heroImageContainerOuterBackgroundColor: $clientColor1;
+$heroCTATextContainerBackgroundColor: $clientColor1;
+$heroCTAIconContainerBackgroundColor: $clientColor1;
+
+
+// Hero Player
+$overlayDurationFontColor: #fff;
+$videoPlayerContainerBkgColor: $clientColor1;
+$playlistItemThumbnailBorder: 2px solid #a1a1a1;
+$selectedPlaylistItemThumbnailBorder: 2px solid #a1a1a1;
+$playlistItemTitleFontColor: #fff;
+$playlistItemDurationFontColor: #fff;
+$overlayCTAIconContainerBackgroundColor: $clientColor1;
+$overlayCTAIconColor: $clientColor1;
+$overlayIconColor: $clientColor1;
+$playlistIconActiveColor: $clientColor1;
+$spinnerBackgroundColor: $clientColor1;
+$heroImageOuterContainerBackgroundColor: $clientColor1;
+
+// Featured Asset
+$featuredAssetsTopHeadingColor: $clientColor1;
+$featuredItemTitleColor: $clientColor1;
+$featuredItemBackgroundColor: $clientColor1;
+
+// Asset Listing
+$assetListingTopHeadingColor: $clientColor1;
+$assetsListingDescriptionColor: $clientHoverColor1;
+$assetsListingTitleHoverColor: $clientColor1;
+$assetsListingCTAColor: $clientColor1;
+$assetsListingCTAHoverColor: $clientHoverColor1;
+$assetListingExpandColor: $clientColor1;
+
+// Social Feed
+$selectedTabBkgColor: $clientColor1;
+$unselectedTabBkgColor: #000;
+$socialFeedLinkColor: $clientColor1;
+$socialFeedFooterBackgroundColor: $clientColor1;
+$socialFeedCTABackgroundColor: $clientColor1;
+$socialFeedCTAHoverBackgroundColor:$clientColor1;
+
+@import "library/_fontsIndustrialDark";
+@import "library/_headerIndustrialDark";
+@import "library/_navigationIndustrialDark";
+@import "library/_wayFinderIndustrialDark";
+@import "library/_heroPlayerIndustrialDark";
+@import "library/_heroAssetIndustrialDark";
+@import "library/_contentViewerIndustrialDark";
+@import "library/_socialFeedsIndustrialDark";
+@import "library/_oneregIndustrialDark";

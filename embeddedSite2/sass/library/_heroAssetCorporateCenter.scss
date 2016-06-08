@@ -1,0 +1,242 @@
+/* Classes controlled with JS */
+.show{
+  visibility: visible !important;
+}
+
+/* Hero player parent container */
+#heroAssetContainer{
+  background: $heroAssetContainerBackgroundColor;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  margin:0 auto;
+  position: relative;
+  width: 100%;
+
+  /* Hero image overlay, duration, title and call-to-action (CTA) */
+  #heroImage{
+    // background:$heroImage;
+    background-size: cover;
+    cursor:pointer;
+    display: block;
+    height: 225px;
+    visibility: visible;
+    // text-align: center;
+    width: 100%;
+    z-index: 3;
+
+    &:before{
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -0.25em;
+    }
+    #heroImageContainerOuter{
+      background: $heroImageContainerOuterBackgroundColor;
+      height:225px;
+      overflow: hidden;
+      position: relative;
+      top:-225px;
+      #heroImageContainerInner{
+        display: inline-block;
+        position: relative;
+        right:-50%;
+        img{
+          height:225px;
+          left:-50%;
+          position: relative;
+        }
+      }
+    }
+
+    #heroOverlay{
+      background: rgba(255,255,255,0.85);
+      display: inline-block;
+      height: auto;
+      left:50%;
+      margin-left: -130px;
+      padding: 10px 10px 20px;
+      position: relative;
+      vertical-align: middle;
+      width: 260px;
+      z-index: 2;
+
+      .overlayTitle{
+        border:0;
+        color:$overlayTitleFontColor;
+        display: block;
+        font-family: 'latoblack';
+        font-size: 18px;
+        line-height: 22px;
+        height: auto;
+        margin-bottom: 20px;
+        max-height: 120px;
+        overflow: hidden;
+        padding-top: 20px;
+        text-align: center;
+      }
+      .overlayCTA{
+        background:$overlayCTABkgColor;
+        color:$overlayCTAFontColor;
+        display: block;
+        font-family: arial;
+        font-size: 12px;
+        font-weight: bold;
+        height: 30px;
+        margin: 0 auto;
+        padding: 6px 15px;
+        position: relative;
+        text-align: center;
+        text-indent: -25px;
+        text-transform: uppercase;
+        width: 165px;
+
+        &:before{
+          background: $heroCTAIconContainerBackgroundColor;
+          content:'';
+          display: block;
+          height:30px;
+          position: absolute;
+          right:0;
+          top:0;
+          width:30px;
+        }
+
+        &:after{
+          display: none;
+        }
+
+        i{
+          color: #fff;
+          font-size: 28px;
+          height: 20px;
+          margin: -2px 0 0 0;
+          line-height: 22px;
+          position: absolute;
+          right:1px;
+          text-align: center;
+        }
+      }
+      &:hover{
+        .overlayCTA{
+          background: $heroCTATextContainerBackgroundColor;
+        }
+        .overlayTitle{
+          color: $clientColor1;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media(min-width:640px){
+
+  #heroAssetContainer{
+    #heroImage{
+      height: 240px;
+
+      #heroOverlay{
+        margin-left: -190px;
+        padding:15px 30px 20px;
+        width:380px;
+
+        .overlayTitle{
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .overlayCTA{
+          padding: 5px 15px;
+          i{
+            margin: -1px 0 0 0;
+          }
+        }
+      }
+      #heroImageContainerOuter{
+        height:240px;
+        top:-240px;
+        #heroImageContainerInner{
+          img{
+            height:240px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:960px){
+
+  #heroAssetContainer{
+    #heroImage{
+      height: 300px;
+
+      #heroOverlay{
+        margin-left: -212.5px;
+        padding:18px 25px 40px;
+        width: 425px;
+
+        .overlayTitle{
+          font-size: 25px;
+          line-height: 30px;
+          margin-bottom: 30px;
+        }
+        .overlayCTA{
+          font-size: 14px;
+          height:40px;
+          padding:9px 15px;
+          text-indent: -40px;
+          width: 175px;
+
+          &:before{
+            height:40px;
+            width:40px;
+          }
+
+          i{
+            font-size: 36px;
+            margin:0;
+            right:0;
+          }
+        }
+      }
+
+      #heroImageContainerOuter{
+        height:300px;
+        top:-300px;
+        #heroImageContainerInner{
+          img{
+            height:300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:1280px){
+
+  #heroAssetContainer{
+    #heroImage{
+      height: 380px;
+      margin: 0 auto;
+      max-width: 1180px;
+
+      #heroOverlay{
+        .overlayTitle{
+          font-size: 25px;
+          line-height: 30px;
+        }
+      }
+
+      #heroImageContainerOuter{
+        height: 380px;
+        top:-380px;
+        #heroImageContainerInner img{
+          height: 380px;
+        }
+      }
+    }
+  }
+}

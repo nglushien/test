@@ -1,0 +1,180 @@
+/* Classes controlled with JS */
+.show{
+  visibility: visible !important;
+}
+
+/* Hero player parent container */
+#heroAssetContainer{
+  background: #fff;
+  margin:0 auto;
+  position: relative;
+  width: 100%;
+  /* Hero image overlay, duration, title and call-to-action (CTA) */
+  #heroImage{
+    background-size: cover;
+    cursor:pointer;
+    display: block;
+    height:200px;
+    margin:0 auto;
+    position: relative;
+    visibility: visible;
+    width: 280px;
+    z-index: 3;
+
+    #heroImageContainerOuter{
+      background:$heroImageContainerOuterBackgroundColor;
+      height:200px;
+      overflow: hidden;
+      position: relative;
+      top:inherit;
+      #heroImageContainerInner{
+        img{
+          height:auto;
+          min-width: 481px;
+          position: absolute;
+          width:100%;
+        }
+      }
+    }
+
+    #heroOverlay{
+      background: $overlayTitleBkgColor;
+      height: 200px;
+      position: absolute;
+      width: 280px;
+
+      .overlayTitle{
+        color:$overlayTitleFontColor;
+        font-family: $fontArialRegular;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        overflow: hidden;
+        padding: 25px 10px;
+      }
+      .overlayCTA{
+        background:$overlayCTABkgColor;
+        bottom: 0;
+        color:$overlayCTAFontColor;
+        font-family: $fontArialRegular;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 35px;
+        height: 35px;
+        position: absolute;
+        text-align: center;
+        text-indent: 0;
+        text-transform: uppercase;
+        width: 100%;
+        i{
+          display: none;
+        }
+        &:after{
+          display: none;
+        }
+      }
+
+      &:hover{
+        .overlayCTA{
+          background: $overlayCTATextContainerHoverBackgroundColor;
+          &:after{
+            color:$heroCTAIconContainerBackgroundColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:640px){
+
+  #heroAssetContainer{
+    #heroImage{
+      height: 200px;
+      width: 600px;
+
+      #heroOverlay{
+        width:50%;
+        .overlayTitle{
+          padding:30px 10px;
+        }
+      }
+      #heroImageContainerOuter{
+        height:200px;
+        #heroImageContainerInner{
+          img{
+            min-width: 620px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:960px){
+
+  #heroAssetContainer{
+    #heroImage{
+      height: 312px;
+      width: 920px;
+      #heroOverlay{
+        height: 312px;
+        width: 300px;
+        .overlayTitle{
+          font-size: 28px;
+          line-height: 30px;
+          max-height: 257px;
+          overflow: hidden;
+          padding: 60px 20px 30px;
+          position: relative;
+        }
+        .overlayCTA{
+          font-size: 18px;
+          height: 55px;
+          line-height: 55px;
+          margin: 0 auto;
+          position: relative;
+          width: 252px;
+        }
+      }
+      #heroImageContainerOuter{
+        height:312px;
+        #heroImageContainerInner{
+          img{
+            min-width: 968px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:1280px){
+  #heroAssetContainer{
+    max-width: inherit;
+    #heroImage{
+      height:380px;
+      margin:0 auto;
+      width: 1180px;
+
+      #heroOverlay{
+        height:380px;
+        .overlayTitle{
+          font-size: 32px;
+          max-height: 435px;
+          overflow: hidden;
+          line-height: 38px;
+        }
+      }
+
+      #heroImageContainerOuter{
+        height:380px;
+        #heroImageContainerInner{
+          img{
+            min-width: inherit;
+          }
+        }
+      }
+    }
+  }
+}

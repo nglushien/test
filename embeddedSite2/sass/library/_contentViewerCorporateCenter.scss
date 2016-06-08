@@ -1,0 +1,606 @@
+$assetsListingDivider: 1px solid #c2c2c2;
+$fontArialRegular: Arial, Helvetica Neue, Helvetica, sans-serif;
+$fontArialBlack: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+
+#featuredAssets {
+  text-align: center;
+  background: url(../images/assetContainerBackground.png) repeat;
+  padding: 25px 10px 0;
+
+  ul {
+    a {
+      &:hover{
+        h3{
+          color:$featuredItemTitleHoverColor;
+        }
+        .featuredAssetCTALeft{
+          background: $featuredItemCTATextContainerBackgroundHoverColor;
+        }
+      }
+
+    }
+  }
+  li {
+    margin: 0 auto 26px;
+    width: 300px;
+    background: #e1e1e1;
+    border: 2px solid #fff;
+
+    // &:hover {
+    //   border: 2px solid $featuredItemBorderColor;
+    // }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .featuredAssetsHeading{
+    line-height: 0;
+  }
+
+  .featuredAssetsTitleContainer {
+    font-family: latoblack;
+    height: 15px;
+    margin: 0 auto 20px;
+    max-width: 296px;
+
+    h2 {
+      margin-bottom: 25px;
+      color: $featuredAssetsTopHeadingColor;
+      font-size: 14px;
+      // display: inline-block;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+
+      &:before {
+        left: 0;
+      }
+
+      &:after {
+        right: 0;
+      }
+
+      &:before, &:after {
+        display: block;
+        position: absolute;
+        top: 51%;
+        overflow: hidden;
+        width: 40px;
+        height: 1px;
+        content: '\a0';
+        background-color: $featuredAssetsTopHeadingLineColor;
+      }
+
+      // &:before {
+      //   margin-left: -50%;
+      //   text-align: right;
+      // }
+
+      // &:before, &:after {
+      //   position: absolute;
+      //   top: 51%;
+      //   overflow: hidden;
+      //   width: 50%;
+      //   height: 1px;
+      //   content: '\a0';
+      //   background-color: $featuredAssetsTopHeadingColor;
+      // }
+
+      span {
+        padding: 10px;
+      }
+    }
+  }
+
+  .featuredAssetsContent {
+    padding: 15px 20px 17px;
+
+    h3 {
+      font-size: 18px;
+      font-family: latoheavy;
+      line-height: 22px;
+      color: $featuredItemTitleColor;
+      margin-bottom: 25px;
+
+    }
+    .featuredAssetContent {
+      display: none;
+    }
+  }
+
+  .featuredAssetCTALeft {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-family: latomedium;
+    font-size: 12px;
+    cursor: pointer;
+    background: $featuredItemCTATextContainerBackgroundColor;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+  }
+  .featuredAssetCTARight {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: $featuredAssetsCTAIconContainerBackgroundColor;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin: 0 auto;
+
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+#assetsListing {
+  background:#fff;
+  padding: 22px 10px 30px;
+  position: relative;
+
+  .assetsListingTitleContainer {
+    font-family: latoblack;
+    height: 15px;
+
+    h2 {
+      margin-bottom: 25px;
+      color: $assetListingTopHeadingColor;
+      font-size: 14px;
+      // display: inline-block;
+      line-height: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 51%;
+        content: '\a0';
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid $assetListingTopHeadingLineColor;
+        z-index: -1;
+      }
+
+      span {
+        padding: 10px;
+        background-color: #fff;
+        display: inline-block;
+
+        &:after {
+          position: absolute;
+          top: 51%;
+          z-index: -1;
+          content: '\a0';
+          width: 100%;
+          height: 1px;
+          border-bottom: 1px solid $assetListingTopHeadingLineColor;
+        }
+      }
+    }
+  }
+
+  ul {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    padding: 20px 20px 10px;
+    position: relative;
+
+    li {
+      padding: 16px 0;
+      border-top: $assetsListingDivider;
+
+      &:first-of-type {
+        padding-top: 0;
+        border-top: none;
+      }
+
+      &:nth-child(n+4) {
+        display: none;
+      }
+      &:nth-child(n+4).open {
+        display: block;
+      }
+
+      &:last-of-type {
+        border-bottom: 0;
+        padding-bottom: 30px;
+      }
+
+      a:hover{
+        .assetsListingHeading h3{
+          color: $assetsListingTitleHoverColor;
+        }
+        .assetsListingContent .assetCTA{
+          color: $assetsListingCTAHoverColor;
+        }
+      }
+    }
+
+    .assetsListingHeading {
+      margin-bottom: 11px;
+
+      h3 {
+        font-family: latoblack;
+        font-size: 17px;
+        color: $assetsListingTitleColor;
+        line-height: 22px;
+      }
+    }
+
+    .assetsListingContent {
+      p {
+        font-family: latomedium;
+        font-size: 16px;
+        line-height: 22px;
+        color: $assetsListingDescriptionColor;
+      }
+      a {
+        color: $assetsListingTitleColor;
+        font-family: latoblack;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+      .assetCTA {
+        text-transform: uppercase;
+        font-family: latoblack;
+        font-size: 13px;
+        color: $assetsListingCTAColor;
+      }
+    }
+  }
+  .assetListingExpand {
+    text-align: center;
+    text-transform: uppercase;
+    color: $assetListingExpandColor;
+    cursor: pointer;
+    font-family: latoblack;
+    font-size: 14px;
+    display: none;
+
+    span {
+      font-size: 12px;
+    }
+
+    i.icon-play{
+      color: $assetListingExpandColor;
+      display: inline-block;
+      transform: rotate(90deg) ;
+      -webkit-transform: rotate(90deg) ;
+      -moz-transform: rotate(90deg) ;
+      -o-transform: rotate(90deg) ;
+      -ms-transform: rotate(90deg) ;
+    }
+  }
+  #assetListingFader {
+    display: none;
+  }
+}
+
+@media (min-width:640px){
+  #featuredAssets {
+    padding-top: 19px;
+
+    ul {
+      width: 620px;
+      margin: 0 auto;
+    }
+    li {
+      width: 200px;
+      float: left;
+      margin-right: 10px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    .featuredAssetsTitleContainer {
+      margin: 0 auto 19px;
+      max-width: 616px;
+
+      h2 {
+        &:before, &:after {
+          width: 196px;
+        }
+
+      }
+    }
+
+    .featuredAssetsContent {
+      padding: 15px 20px 22px;
+
+      h3 {
+        font-size: 15px;
+        height: 58px;
+        line-height: 19px;
+        overflow: hidden;
+      }
+    }
+
+    .featuredAssetCTA {
+      width: 150px;
+    }
+  }
+}
+
+@media (min-width:960px){
+  #featuredAssets {
+    padding-top: 36px;
+
+    .featuredAssetsTitleContainer {
+      height: 22px;
+      margin: 0 auto 36px;
+      max-width: 935px;
+
+      h2 {
+        font-size: 18px;
+        line-height: 22px;
+
+        span {
+          padding: 0 20px;
+        }
+
+        &:before, &:after {
+          width: 320px;
+        }
+
+      }
+    }
+
+    ul {
+      width: 940px;
+      margin: 0 auto;
+    }
+    li {
+      width: 300px;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 40px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    .featuredAssetCTA {
+      width: 150px;
+    }
+
+    .featuredAssetsContent {
+      margin-bottom: 0;
+      padding-bottom: 18px;
+
+      h3 {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom:10px;
+        height: 70px;
+        max-height: 70px;
+        overflow: hidden;
+      }
+      .featuredAssetContent {
+        font-size: 16px;
+        line-height: 22px;
+        color: #7d7d7d;
+      }
+    }
+    .featuredAssetCTALeft {
+      font-family: $fontArialRegular;
+      font-weight: 700;
+      font-size: 14px;
+      width: 175px;
+      height: 40px;
+      line-height: 40px;
+    }
+    .featuredAssetCTARight {
+      width: 40px;
+      height: 40px;
+
+      i {
+        line-height: 40px;
+      }
+    }
+  }
+
+  #assetsListing {
+    padding-top: 35px;
+
+    #assetListingFader {
+      bottom: 25px;
+    }
+
+    .assetsListingTitleContainer {
+      margin-bottom: 40px;
+      h2 {
+        font-size: 18px;
+        line-height: 22px;
+
+        span {
+          padding: 0 20px;
+        }
+      }
+    }
+    ul{
+      background:url(../images/centerline.png)repeat-y 50% 0;
+      padding: 0;
+      overflow-y:visible;
+      padding: 0 0 30px;
+
+      .assetsListingHeading {
+        h3 {
+          font-family: latoblack;
+          font-size: 18px;
+          line-height: 22px;
+          margin-bottom: 2px;
+        }
+      }
+
+      .assetsListingContent {
+        p {
+          font-family: latoregular;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+
+      li{
+        border-bottom:0;
+        border-top: $assetsListingDivider;
+        float: left;
+        padding: 25px 0;
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+
+        &:first-child,&:nth-child(2){
+          border: 0;
+        }
+
+        &:nth-child(2){
+          padding-top: 0;
+        }
+
+        &:nth-child(2n+1){
+          clear: left;
+        }
+
+        &:nth-child(n+4) {
+          display: block;
+        }
+
+        &:nth-child(n+11) {
+          display: none;
+        }
+
+        &:nth-child(even){
+          width: 47%;
+          margin-left: 2%;
+          margin-right: 1%;
+          padding-right: 0;
+          border-right: 0;
+        }
+
+        p{
+          color:#333;
+          font-size: 14px;
+        }
+      }
+    }
+    .assetListingExpand {
+      margin-top: 20px;
+    }
+ }
+}
+@media (min-width:1280px){
+  #featuredAssets {
+    padding: 47px 10px 15px;
+    ul {
+      width: 1180px;
+    }
+    li {
+      width: 380px;
+    }
+
+    .featuredAssetsTitleContainer {
+      margin:0 auto 47px;
+      max-width: 1180px;
+
+      h2 {
+        font-size: 20px;
+
+        span {
+          padding: 0 30px;
+        }
+        &:before, &:after {
+          width: 425px;
+        }
+
+      }
+    }
+
+    .featuredAssetsContent {
+      padding-top: 15px;
+      padding-bottom: 43px;
+
+      h3{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+        height: 85px;
+        max-height: 85px;
+      }
+      .featuredAssetContent {
+        margin-bottom: 10px;
+      }
+    }
+    .featuredAssetCTALeft {
+      width: 200px;
+      height: 35px;
+      line-height: 35px;
+    }
+    .featuredAssetCTARight {
+      height: 35px;
+
+      i {
+        line-height: 35px;
+      }
+    }
+  }
+  #assetsListing {
+    padding-top: 47px;
+
+    .assetsListingTitleContainer {
+      margin:0 auto 47px;
+      max-width: 1180px;
+
+      h2 {
+        font-size: 20px;
+
+        span {
+          padding: 0 20px;
+        }
+      }
+    }
+    ul {
+      margin:0 auto;
+      max-width: 1180px;
+      li{
+        width: 49%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 19px;
+        padding-bottom: 15px;
+
+        &:nth-child(even){
+          width: 47%;
+          margin-left: 3%;
+        }
+      }
+      .assetsListingHeading {
+        margin-bottom: 4px;
+
+        h3 {
+          font-size: 17px;
+        }
+      }
+      .assetsListingContent {
+        p {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}

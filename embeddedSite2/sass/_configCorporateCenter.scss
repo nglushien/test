@@ -1,0 +1,92 @@
+// Client branding colors
+// Center tabs demo:
+$clientColor1: #0096d6;
+$clientHoverColor1: #27354f;
+$clientColor2: #27354f;
+$clientHoverColor2: #0096d6;
+
+// Template Colors
+$templateTextColor1: #323232;
+$templateTextColor2: #666;
+$templateTextColor3: #a0a0a0;
+
+// Header
+$headerOuterContainerBackgroundColor: $clientColor1;
+$headerShareIconHoverColor: $clientColor1;
+$headerShareIconMobileActiveColor: $clientColor1;
+$headerSponsorBarBackgroundColor: $clientColor2;
+$headerSponsoredInfoIconActiveColor: $clientColor1;
+
+// Nav
+$navOuterContainerBackgroundColor: $clientColor1;
+$navOuterContainerBottomBorderColor: $clientColor2;
+$navBottomIndicatorArrorColor: $clientColor1;
+$navDropdownMobileBackgroundColor: $clientColor1;
+$navDropdownMobileFontColor: $clientColor2;
+$navDesktopTabBackgroundColor: $clientColor2;
+
+// Wayfinder
+$wayfinderTitleFontColor: $templateTextColor1;
+$wayfinderDescriptionFontColor: #7d7d7d;
+
+// Hero Asset
+$overlayCTAFontColor: #fff;
+$overlayTitleFontColor: $clientColor2;
+$overlayCTABkgColor: $clientColor2;
+$heroAssetContainerBackgroundColor: #27354f;
+$heroImageContainerOuterBackgroundColor: $heroAssetContainerBackgroundColor;
+$heroCTATextContainerBackgroundColor: $clientColor1;
+$heroCTAIconContainerBackgroundColor: $clientColor1;
+
+// Hero Player
+$heroPlayerContainerBackgroundColor: $clientColor2;
+$overlayDurationFontColor: $clientColor1;
+$overlayCTATextContainerBackgroundColor: $clientColor1;
+$overlayCTAIconContainerBackgroundColor: $clientColor1;
+$overlayCTAIconColor: $clientColor1;
+$overlayIconColor: $clientColor1;
+$videoPlayerContainerBkgColor: $clientColor2;
+$playlistItemThumbnailBorder: 2px solid #e1e1e1;
+$playlistIconActiveColor: $clientColor1;
+$selectedPlaylistItemThumbnailBorder: 2px solid $clientColor1;
+$playlistItemTitleFontColor: #7d7d7d;
+$playlistItemDurationFontColor: #fff;
+$spinnerBackgroundColor: $clientColor1;
+$heroImageOuterContainerBackgroundColor: $clientColor2;
+
+// Featured Asset
+$featuredAssetsTopHeadingColor: $templateTextColor2;
+$featuredAssetsTopHeadingLineColor: $templateTextColor3;
+$featuredItemBorderColor: $clientColor1;
+$featuredItemTitleColor: $clientColor2;
+$featuredItemTitleHoverColor: $clientColor1;
+$featuredItemCTATextContainerBackgroundColor: $clientColor2;
+$featuredItemCTATextContainerBackgroundHoverColor: $clientColor1;
+$featuredAssetsCTAIconContainerBackgroundColor: $clientColor1;
+
+// Asset Listing
+$assetListingTopHeadingColor: $templateTextColor2;
+$assetListingTopHeadingLineColor: $templateTextColor3;
+$assetsListingTitleColor: $templateTextColor1;
+$assetsListingTitleHoverColor: #000;
+$assetsListingDescriptionColor: $templateTextColor2;
+$assetsListingCTAColor: $clientColor2;
+$assetsListingCTAHoverColor:$clientColor1;
+$assetListingExpandColor: $clientColor1;
+
+// Social Feed
+$selectedTabBkgColor: $clientColor1;
+$unselectedTabBkgColor: #999;
+$socialFeedLinkColor: $clientColor1;
+$socialFeedFooterBackgroundColor: $clientColor2;
+$socialFeedCTAHoverBackgroundColor: $clientHoverColor2;
+
+@import "library/_fontsCorporateCenter";
+@import "library/_headerCorporateCenter";
+@import "library/_navigationCorporateCenter";
+@import "library/_wayFinderCorporateCenter";
+@import "library/_heroPlayerCorporateCenter";
+@import "library/_heroAssetCorporateCenter";
+@import "library/_contentViewerCorporateCenter";
+@import "library/_socialFeedsCorporateCenter";
+@import "library/_oneregCorporateCenter";

@@ -1,0 +1,58 @@
+- var featuredTopicTitles = ['Lorem ipsum dolor sit amet, consectetur adipiscing', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin'];
+//- - var assetListingTitles = ['I guess its better to be lucky than good. 1', 'and attack the Romulans. About four years. I got tired of hearing how young I looked. 2'];
+
+- var assetListingTitles = ['Quisque sit amet ultricies sapien. Morbi cursus vestibulum tempus', 'Quisque sit amet ultricies sapien. Morbi', 'Quisque sit amet ultricies sapien. Morbi cursus vestibulum', 'Quisque sit amet ultricies', 'Quisque sit amet ultricies sapien. Morbi cursus', 'Quisque sit amet ultricies sapien. Morbi cursus vestibulum tempus. Sed.', 'Quisque sit amet ultricies sapien. Morbi cursus vestibulum tempus', 'Quisque sit amet ultricies sapien. Morbi', 'Quisque sit amet ultricies sapien. Morbi', 'Quisque sit amet ultricies sapien. Morbi', 'Quisque sit amet ultricies sapien. Morbi'];
+
+#featuredAssetContainer
+  #featuredAssets.clearfix
+    .featuredAssetsTitleContainer
+      h2
+        span Recently Added Content
+    ul
+      li
+        a(href='test.com')
+          .featuredAssetsHeading
+            img(src='images/assetImage5.png')
+          .featuredAssetsContent
+            h3 Lorem ipsum dolor sit amet, consectetur adipiscing
+            p.featuredAssetContent Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc.
+            .featuredAssetCTALeft View Now 
+              span.featuredAssetCTARight
+                i.icon-arrow
+      li
+        a(href='test.com')
+          .featuredAssetsHeading
+            img(src='images/assetImage6.png')
+          .featuredAssetsContent
+            h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            p.featuredAssetContent Vestibulum id nisi dapibus, mollis tellus vel, 
+            .featuredAssetCTALeft View Now 
+              span.featuredAssetCTARight
+                i.icon-arrow
+      li
+        a(href='test.com')
+          .featuredAssetsHeading
+            img(src='images/assetImage7.png')
+          .featuredAssetsContent
+            h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin djhksdhjsh dhsjdhsj
+            p.featuredAssetContent Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec 
+            .featuredAssetCTALeft View Now 
+              span.featuredAssetCTARight
+                i.icon-arrow
+  #assetsListing
+    .assetsListingTitleContainer
+      h2 
+        span Browse Our Library
+    ul#assetsList
+      for assetListingTitle in assetListingTitles
+        li
+          a(href="google.com")
+            .assetsListingHeading
+              h3 #{assetListingTitle}
+            .assetsListingContent
+              p Vestibulum id nisi dapibus, mollis tellus vel, fermentum elit. Sed rhoncus varius arcu in tristique. Donec elementum nibh non leo tempus rutrum. Pellentesque dui tellus, interdum congue sapien a, ultrices scelerisque nunc. 
+              p.assetCTA Continue Reading
+    #assetListingFader
+    .assetListingExpand
+      p Load More 
+        i.icon-play

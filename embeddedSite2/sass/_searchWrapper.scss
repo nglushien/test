@@ -1,0 +1,98 @@
+.site-container #micrositeWrapper{
+  margin-top: 60px;
+  position: relative;
+}
+
+.site-container .nav-social,.site-container .nav-user{
+  display: none;
+}
+
+footer{
+  margin:40px auto 0;
+}
+
+[hidden] { display: none; }
+
+body[class^="computerweekly"], body[class^="lemagit"]{
+  .nav .nav-user, .nav .nav-links, .nav .nav-rss, .nav .nav-social, .header-logo-tt-desktop, .ad-wrapper{
+  	display: none;
+  }
+
+  .header-search-toggle{
+    right:0;
+  }
+
+  #main-content{
+    margin:132px 20px 0 !important;
+  }
+
+  #micrositeWrapper{
+    margin-top: 0;
+  }
+}
+
+body[class^="german"]{
+  .nav-list-item{
+    top:0;
+  }
+  #main-content{
+    margin:30px 20px 0 !important;
+  }
+}
+
+@media (min-width:960px){
+  .header{
+    height:100px;
+  }
+  .header-logo{
+    height:90px;
+    top:0;
+  }
+
+  .nav{
+    padding-top: 0;
+  }
+  .nav-list-item-topics,.nav-list-item-sections{
+    top:0;
+  }
+  .header-desktop-fixed .header .nav{
+    border-bottom: 1px solid #e3e3e3;
+    height:57px;
+  }
+  .site-container #micrositeWrapper{
+    margin-top: 0;
+  }
+
+  body[class^="computerweekly"], body[class^="lemagit"], body[class^="german"]{
+		.header{
+			padding-bottom: 0;
+		}
+		.header-logo{
+			bottom: 0;
+		}
+		.micrositeSponsoredContentHeader{
+			margin-top: 1px !important;
+		}
+		&.header-desktop-fixed .micrositeSponsoredContentHeader{
+			top: 57px;
+		}
+    #main-content{
+	    margin:60px auto 0 !important;
+	  }
+    .nav-list-item-searchsites .nav-list-item-header-title{
+      width:240px;
+    }
+	}
+}
+
+@media (min-width:1280px){
+  .header-search{
+    top:0;
+    z-index: 3;
+  }
+  body[class^="computerweekly"], body[class^="lemagit"], body[class^="german"]{
+		#main-content{
+	    margin:60px auto 0 !important;
+	  }
+	}
+}
